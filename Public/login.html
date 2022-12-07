@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="authDiv">
+        <h3>Hello there!</h3>
+        <form action="/auth/login" method="POST" id="login-form" class="loginForm">
+            <div>
+                <label for="email">Email:</label><br>
+                <input required class="emailInput" id="email-input" name="username" placeholder="jhondoe@example.com"
+                    type="text"><br>
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input required class="emailInput" id="password-input" name="password" placeholder="*****"
+                    type="password"><br>
+            </div>
+            <div>
+                <button id="login-btn">Log in</button>
+            </div>
+        </form>
+        <span>Do not have an account?</span>
+        <a href="/register">
+            <button>Sign Up</button>
+        </a>
+    </div>
+</body>
+<script src="../../index.js"></script>
+
+</html>
